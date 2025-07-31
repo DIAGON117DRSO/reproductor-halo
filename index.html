@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reproductor Halo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="fondo">
+    <video id="video" controls>
+      <source src="https://www.dropbox.com/scl/fi/73uq5ttcfbm0j4abunud9/Your-Name-Trailer-Espa-ol-Latino.mp4?rlkey=3jkzo4bzfww7op3nafsur99ul&st=6uyavpdl&raw=1" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+
+    <div class="controles">
+      <button onclick="retroceder()">-5s</button>
+      <button onclick="pausar()">▶️</button>
+      <button onclick="avanzar()">+5s</button>
+    </div>
+  </div>
+
+  <audio id="sonido" src="halo-camuflaje.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

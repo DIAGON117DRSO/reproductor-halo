@@ -1,0 +1,44 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+
+.fondo {
+  background: url('fondo.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  width: 80%;
+  max-width: 900px;
+  border: 3px solid #27eeee;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #27eeee;
+}
+
+/* Personalización para navegadores WebKit (barra de progreso) */
+video::-webkit-media-controls-timeline {
+  background-color: #27eeee;
+}
+
+.controles {
+  margin-top: 20px;
+}
+
+button {
+  background: #27eeee;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
